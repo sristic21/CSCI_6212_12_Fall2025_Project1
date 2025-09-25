@@ -3,7 +3,7 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Input size (n)
+# Input size (n) is chosen in a way that the selected values can represent the growth rate accurately for logarithmic time complexity
 N_vals=[1_000_000, 13_250_000, 25_500_000, 37_750_000, 50_000_000]
 
 # The given pseudocode of the question is in the function for checking the time complexity
