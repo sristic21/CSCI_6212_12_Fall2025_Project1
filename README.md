@@ -3,9 +3,9 @@ Project 1 of Design and Analysis of Algorithms
 
 # Experimental Analysis of the given Nested Loop:
 
-## 📝 Overview
+## Overview
 The following program/code sample is to be analyzed:
-
+---c
 int j=5
 while (j<n/2) {
 	int k=5
@@ -15,6 +15,14 @@ k=k*sqrt(2)
 }
 j= sqrt(3)*j
 }
+----
+## Inputs (n) Tested for:
+
+The following `n` values have been used in the experiment:
+
+```python
+N_vals=[1_000_000, 13_250_000, 25_500_000, 37_750_000, 50_000_000]
+```
 
 ## Prerequisites
 In order to run the analysis script, Python 3.x environment is needed with the following libraries:
@@ -51,12 +59,3 @@ python analysis.py
    * Display a graph comparing experimental runtime vs scaled theoretical runtime.
 
 ---
-
-## Input Sizes Tested
-
-The following `n` values are used in the experiment:
-
-```python
-n_values = [4000, 5000, 6000, 7000, 8000, 9000, 10000,
-            20000, 30000, 40000, 50000, 80000, 100000]
-```
