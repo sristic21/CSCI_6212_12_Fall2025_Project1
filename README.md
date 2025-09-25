@@ -1,19 +1,62 @@
 # CSCI_6212_12_Fall2025_Project1
 Project 1 of Design and Analysis of Algorithms
 
-# Experimental Analysis of O(log² n) Nested Loops
+# Experimental Analysis of the given Nested Loop:
 
 ## 📝 Overview
-This repository contains a Python script used to experimentally verify the time complexity of a nested loop structure, where both the outer and inner loop variables grow geometrically.
+The following program/code sample is to be analyzed:
 
-The theoretical analysis concluded that the algorithm's time complexity is **$T(n) = O(\log^2 n)$**. The script measures runtime for large input sizes and uses polynomial regression to fit a quadratic curve to the $\log_2(n)$ values, confirming this scaling behavior.
+int j=5
+while (j<n/2) {
+	int k=5
+	while (k<n) {
+sum += a[j]*b[k]
+k=k*sqrt(2)
+}
+j= sqrt(3)*j
+}
 
-## ⚙️ Prerequisites
-To successfully run this analysis script, you need a Python 3 environment and the following libraries:
+## Prerequisites
+In order to run the analysis script, Python 3.x environment is needed with the following libraries:
 
-* **`numpy`**: For mathematical operations, especially `np.log2` and `np.polyfit`.
-* **`matplotlib`**: For plotting the experimental and theoretical results.
+* **`numpy`**: this is used for mathematical operations, especially for functions such as `np.log2` and `np.polyfit`.
+* **`matplotlib`**: this is used to plot the experimental and theoretical results.
 
-You can install them using `pip`:
+The installation can be done using `pip`:
 ```bash
 pip install numpy matplotlib
+
+
+##CHANGE
+## Running the Code
+
+1. Open a terminal and navigate to the project folder:
+
+```bash
+cd AsymptoticAnalysis
+```
+
+2. Run the Python script:
+
+```bash
+python analysis.py
+```
+
+3. The script will:
+
+   * Compute experimental runtime for a set of `n` values.
+   * Compute theoretical operation counts based on loop constraints.
+   * Scale the theoretical values to comparable time units.
+   * Print a table comparing experimental runtime, theoretical opearations, and scaled theoretical runtime.
+   * Display a graph comparing experimental runtime vs scaled theoretical runtime.
+
+---
+
+## Input Sizes Tested
+
+The following `n` values are used in the experiment:
+
+```python
+n_values = [4000, 5000, 6000, 7000, 8000, 9000, 10000,
+            20000, 30000, 40000, 50000, 80000, 100000]
+```
