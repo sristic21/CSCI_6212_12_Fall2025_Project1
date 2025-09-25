@@ -10,10 +10,10 @@ int j=5
 while (j<n/2) {
 	int k=5
 	while (k<n) {
-sum += a[j]*b[k]
-k=k*sqrt(2)
-}
-j= sqrt(3)*j
+		sum += a[j]*b[k]
+		k=k*sqrt(2)
+	}
+	j= sqrt(3)*j
 }
 ```
 ## Inputs (n) Tested for:
@@ -35,8 +35,7 @@ The installation can be done using `pip`:
 pip install numpy matplotlib
 ```
 
-##CHANGE
-## Procedure to run the code
+## Procedure to execute the code
 
 1. In order to get the program running, a suitable terminal is required through which the project folder can be navigated and accessed.
 
