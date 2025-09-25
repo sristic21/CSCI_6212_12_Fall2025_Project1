@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 N_vals=[1_000_000, 13_250_000, 25_500_000, 37_750_000, 50_000_000]
 
 # The given pseudocode of the question is in the function for checking the time complexity
-def nested_loop(n):  
+def pseudocode_loop(n):  
     j = 5
     a = [1]*(n+1)
     b = [1]*(n+1)
@@ -24,7 +24,7 @@ def nested_loop(n):
 exp_ns = []
 for n in N_vals:
     t0 = time.perf_counter()            # time stamp noted at the start of the function
-    nested_loop(n)
+    pseudocode_loop(n)
     t1 = time.perf_counter()            # time stamp noted at the end of the function
     exp_ns.append((t1 - t0) * 10**9)    # time calculated in nanoseconds
 
@@ -59,3 +59,4 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.show()
+
