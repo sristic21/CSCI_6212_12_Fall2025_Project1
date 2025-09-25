@@ -5,7 +5,7 @@ Project 1 of Design and Analysis of Algorithms
 
 ## Overview
 The following program/code sample is to be analyzed:
----c
+```c
 int j=5
 while (j<n/2) {
 	int k=5
@@ -15,7 +15,7 @@ k=k*sqrt(2)
 }
 j= sqrt(3)*j
 }
-----
+```
 ## Inputs (n) Tested for:
 
 The following `n` values have been used in the experiment:
