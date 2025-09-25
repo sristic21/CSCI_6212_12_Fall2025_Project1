@@ -1,9 +1,9 @@
-# CSCI_6212_12_Fall2025_Project1
+## CSCI_6212_12_Fall2025_Project1
 Project 1 of Design and Analysis of Algorithms
 
 # Experimental Analysis of the given Nested Loop:
 
-## Overview
+# Overview
 The following program/code sample is to be analyzed:
 ```c
 int j=5
@@ -33,29 +33,29 @@ In order to run the analysis script, Python 3.x environment is needed with the f
 The installation can be done using `pip`:
 ```bash
 pip install numpy matplotlib
-
+```
 
 ##CHANGE
-## Running the Code
+## Procedure to run the code
 
-1. Open a terminal and navigate to the project folder:
+1. In order to get the program running, a suitable terminal is required through which the project folder can be navigated and accessed.
 
 ```bash
-cd AsymptoticAnalysis
+cd DesignAndAnalysis_Algorithms
 ```
 
 2. Run the Python script:
 
 ```bash
-python analysis.py
+python project1.py
 ```
 
-3. The script will:
+3. The script performs the following tasks:
 
-   * Compute experimental runtime for a set of `n` values.
-   * Compute theoretical operation counts based on loop constraints.
-   * Scale the theoretical values to comparable time units.
-   * Print a table comparing experimental runtime, theoretical opearations, and scaled theoretical runtime.
-   * Display a graph comparing experimental runtime vs scaled theoretical runtime.
+   * It performs a computation for the experimental runtime for a set of `n` values.
+   * It performs a computation for the theoretical operation counts based on loop constraints.
+   * It scales the theoretical values to comparable time units (by calculating a suitable scaling factor `C`).
+   * It finally prints a table that contrasts and compares the curves obtained by the experimental runtime against the theoretical operations and the scaled theoretical runtime.
+   * It also displays a graph comparing experimental runtime vs scaled theoretical runtime for a better understanding of the growth rates exhibited by the two runtimes.
 
 ---
